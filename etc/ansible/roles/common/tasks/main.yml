@@ -1,0 +1,4 @@
+---
+- name: create mysql conf file from template
+  template: src=app-config.j2 dest=/etc/app-config.conf mode=644 owner=root group=root
+  notify: do more db

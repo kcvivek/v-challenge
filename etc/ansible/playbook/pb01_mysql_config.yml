@@ -1,0 +1,17 @@
+---
+- hosts: dbservers
+  become: yes
+  become_method: sudo
+  become_user: root
+  gather_facts: no
+
+  tasks:
+
+  - name: Copy app-config.conf 
+    copy: 
+     src=/tmp/app-config.j2
+     dest=/etc/app-config.conf 
+     mode=644 owner=root group=root
+
+  - name: Do more
+    debug: msg="As config is updated now, do something more with DB.."
