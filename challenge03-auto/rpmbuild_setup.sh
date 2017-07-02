@@ -29,4 +29,9 @@ echo '%_topdir %(echo $HOME)/'"$DIR" > ~/.rpmmacros
 
 echo "Setup complete, go to $DIR/SPECS and create .spec file"
 cd $HOME/$DIR/SPECS
+
+echo "Info: Build rpm using spec file under $HOME/$DIR/SPECS"
 rpmdev-newspec hello-apache-sample
+
+# Build needful rpm for websites based on automation.tar.gz
+rpmbuild -ba hello-apche.spec
