@@ -13,3 +13,10 @@ configuration tool (Puppet, Ansible, Chef, etc.)
 
 automation.tar.gz
 
+===
+
+Ans: Run the shell script pebble_build.sh
+
+This will build a docker image based on tomcat/alpine linux, then run pebble blog.
+
+Browse directory contents for details.
