@@ -18,8 +18,11 @@ automation.tar.gz
 Ans: Run the shell scripts =>
 
 ./rpmbuild_setup.sh  (sets up rpmbuild requirements)
+
 ./yum_rollout.sh (creates an rpm based on SPEC file, pushout to a yum repositiry)
+
 ./ansible_run.sh  (Automate the rpm rollout to all the webservers)
+
 
 Browse directory contents for details.
 
