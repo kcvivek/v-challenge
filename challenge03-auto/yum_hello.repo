@@ -1,0 +1,6 @@
+[apache-hello-repo]
+name = Extra apache rpms for life
+baseurl = https://github.com/kcvivek/v-challenge/tree/master/challenge03-auto/yum-repo
+enabled = 1
+gpgcheck = 0
+
