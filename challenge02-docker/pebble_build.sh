@@ -4,7 +4,7 @@
 mkdir $HOME/gforge
 cd $HOME/gforge/
 git clone https://github.com/kcvivek/v-challenge.git
-v-challenge/challenge02-docker
+cd v-challenge/challenge02-docker
 docker build -t pebble_kc:latest .
 docker run -it --rm -d -p 80:8080 pebble_kc
 
