@@ -11,3 +11,13 @@ Result should be a zip file with the DockerFile used as well as any supporting
 files needed to run the container. 
 
 
+===
+
+Ans: Run the shell script pebble_build.sh
+
+This will build a docker image based on tomcat/alpine linux, then run pebble blog.
+
+Browse directory contents for details.
+
+
+
