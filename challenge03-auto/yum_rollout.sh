@@ -13,7 +13,8 @@ createrepo --database $REPO
 cat <<-EOM> yum_hello.repo
 [apache-hello-repo]
 name = Extra apache rpms for life
-baseurl = https://github.com/kcvivek/v-challenge/tree/master/challenge03-auto/yum-repo
+#baseurl = https://github.com/kcvivek/v-challenge/tree/master/challenge03-auto/yum-repo
+baseurl = file:///home/ec2-user/gforge/v-challenge/challenge03-auto/yum-repo
 enabled = 1
 gpgcheck = 0
 
