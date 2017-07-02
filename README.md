@@ -8,8 +8,7 @@ Change to solve; Complete the exercises
 
 
 === Contents ===
-*
-.
+
 ├── AWS
 │   └── README.md
 ├── challenge01-config
@@ -111,5 +110,3 @@ Change to solve; Complete the exercises
         └── README.md
 
 40 directories, 59 files
-
-*
