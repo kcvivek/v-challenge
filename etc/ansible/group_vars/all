@@ -1,6 +1,0 @@
-# Mysql variables
-env: "development"
-serverName: "lospolloshermanos"
-userName: "Walter White"
-userPassword: "Wh@tsmyN@m3?"
-dbserver: "{{ env }}-mysql.dev.graymattertech.org"
