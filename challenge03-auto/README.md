@@ -21,7 +21,7 @@ Ans: Run the shell scripts =>
 
 ./yum_rollout.sh (creates an rpm based on SPEC file, pushout to a yum repositiry)
 
-./ansible_run.sh  (Automate the rpm rollout to all the webservers)
+./ansible_run.sh  (Automate the rpm rollout to all the webservers using Ansible playbook)
 
 
 Browse directory contents for details.
