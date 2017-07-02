@@ -1,0 +1,4 @@
+---
+# Do something after DB is configured
+- name: do more db
+  debug: msg="As config is updated now, do something more with DB.."

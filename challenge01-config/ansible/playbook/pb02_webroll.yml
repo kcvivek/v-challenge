@@ -1,0 +1,34 @@
+---
+- hosts: webservers
+  become: yes
+  become_method: sudo
+  become_user: root
+  gather_facts: no
+
+  tasks:
+
+  - name: Configure Website
+    copy: 
+     src=/home/ec2-user/gforge/v-challenge/challenge03-auto/yum-repo/hello-apache-1.0-1.amzn1.noarch.rpm
+     dest=/tmp/hello-apache-1.0-1.amzn1.noarch.rpm
+     mode=644 owner=root group=root
+
+  - name: Install httpd apache apache
+    yum:
+       name=httpd
+       state=latest
+    notify:
+      - restart httpd
+
+  - name: Install web rpm
+    yum:
+      name=/tmp/hello-apache-1.0-1.amzn1.noarch.rpm
+      state=present
+
+
+
+  handlers:
+
+  - name: restart httpd
+    service: name=httpd state=restarted
+
