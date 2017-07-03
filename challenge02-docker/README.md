@@ -13,7 +13,11 @@ files needed to run the container.
 
 ===
 
-Ans: Run the shell script pebble_build.sh
+Ans: Run the shell scripts=>
+
+   ./pebble_build.sh (For building pebble docker image & pushing out to registery)
+   
+   ./pebble_docker.sh (Build pebble docker image and run it, accessible locally on port 80)
 
 This will build a docker image based on tomcat/alpine linux, then run pebble blog.
 
